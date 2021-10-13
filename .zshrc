@@ -1,63 +1,101 @@
-# Zsh config
-SHELL_DIR=$HOME/.config/shell
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Settings
-setopt autocd                   # Auto cd when executing directory
-setopt prompt_subst             # Required for prompt
-setopt auto_pushd               # Automatically use pushd
-setopt pushd_ignore_dups        # Pushd will ignore duplicates
-setopt pushdminus               # Allow numbers
-setopt hist_expire_dups_first   # Delete duplicates when HISTFILE is full
-setopt hist_ignore_dups         # Ignore duplicates
-setopt hist_verify              # Show with history expansion before executing
-setopt inc_append_history       # Add in order of execution
-setopt auto_menu                # Show completion menu on tab
-setopt complete_in_word         # Completion from both ends
-setopt always_to_end            # Move cursor to end on completion
+# Path to your oh-my-zsh installation.
+export ZSH="/home/douball/.oh-my-zsh"
 
-stty -ixon                      # Disable XON/XOFF Control
-unsetopt flowcontrol            # Disable flowcontrol
-unsetopt menu_complete          # Don't autoselect first entry
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# Source
-source $SHELL_DIR/vars.sh
-source $SHELL_DIR/functions.sh
-source $SHELL_DIR/aliases.sh
-source $SHELL_DIR/prompt.sh
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-# FZF
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
 
-eval "$(dircolors $SHELL_DIR/.dir_colors)"
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
-# Keybindings
-bindkey -v
-bindkey '^ ' autosuggest-accept
-bindkey -M 'vicmd' -r ':'
-bindkey "^[[P" delete-char
-bindkey "^j" down-history
-bindkey "^k" up-history
-bindkey "^o" vi-cmd-mode
-bindkey "^a" vi-beginning-of-line
-bindkey "^e" vi-end-of-line
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
-# Completion
-zmodload -i zsh/complist
-WORDCHARS=''
-zstyle ':completion:*' list-colors ''
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*:*:*:*:*' menu select
-zstyle ':completion::complete:*' cache-path $ZSH_CACHE_DIR
-zstyle ':completion::complete:*' use-cache 1
+# Uncomment the following line to change how often to auto-update (in days).
+# zstyle ':omz:update' frequency 13
 
-# Zplugin
-source $SHELL_DIR/.zplugin/mod-bin/zplugin.zsh
-autoload -Uz _zplugin compinit
-(( ${+_comps} )) && _comps[zplugin]=_zplugin
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
 
-zplugin ice wait"0" atload"_zsh_autosuggest_start" lucid
-zplugin light zsh-users/zsh-autosuggestions
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
 
-zplugin ice wait"0" atinit"zpcompinit; zpcdreplay" lucid
-zplugin light zdharma/fast-syntax-highlighting
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
