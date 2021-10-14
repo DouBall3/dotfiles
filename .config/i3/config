@@ -14,7 +14,7 @@ set $menu       rofi -show run
 set $window     rofi -show window
 
 # Wallpaper path
-set $wallpaper  $HOME/.github/wallpaper.png
+set $wallpaper  /usr/share/backgrounds/archlinux/archbtw.png
 
 # Lockscreen command
 set $lock       $HOME/.bin/lock
@@ -30,8 +30,8 @@ exec            imwheel -k -b 4567                        # Start imwheel
 exec            $HOME/.bin/scratchpad                   # Start scratchpad terminal
 exec            dunst                                   # Start dunst
 exec_always     $HOME/.config/polybar/launch.sh         # Status bar
-exec_always     feh --bg-scale ~/.github/wallpaper.png  \
-                    --bg-fill  ~/.github/wallpaper.png  # Set wallpaper
+exec_always     feh --bg-scale $wallpaper \
+                    --bg-fill  $wallpaper  # Set wallpaper
 # }}}
 
 # Layout and colorscheme {{{
