@@ -95,6 +95,7 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+eval $(keychain --eval --quiet id_github)
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
