@@ -15,7 +15,7 @@ monitor = ${env:PRIMARY}
 width = 100%
 height = 27
 radius = 0.0
-fixed-center = true
+fixed-center = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -33,11 +33,11 @@ padding-left = 0
 padding-right = 2
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
-modules-left = i3
+modules-left = arch i3 mpd
 modules-center = xwindow
-modules-right = pulseaudio-control cpu temperature memory storage battery openvpn date
+modules-right = pulseaudio-control cpu temperature memory storage wlan battery backlight-acpi date
 
 tray-position = right
 tray-detached = false
@@ -58,6 +58,7 @@ tray-position = none
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
+format-underline = ${xrdb:red}
 
 [module/i3]
 type = internal/i3
@@ -75,7 +76,7 @@ label-mode-background = ${colors.primary}
 ; focused = Active workspace on focused monitor
 label-focused = %index%
 
-label-focused-background = ${colors.background}
+label-focused-background = ${xrdb:cyan-dark}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
@@ -94,10 +95,48 @@ label-urgent = %index%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
+label-separator = |
+
+ws-icon-7 = 8;
+
+
+[module/mpd]
+type = custom/script
+exec = playerctl --player=spotify metadata -f "{{ artist }} - {{ title }}"
+format-prefix =   
+;format-underline = ${xrdb:green}
+click-left = playerctl --player=spotify previous
+click-middle = playerctl --player=spotify play-pause
+click-right = playerctl --player=spotify next
+margin-left = 3
+
+[module/xbacklight]
+;Muestra el brillo de la pantalla. Solo para laptops
+type = internal/xbacklight
+
+ format = <label> <bar>
+ label = BL
+
+  bar-width = 10
+  bar-indicator = |
+  bar-indicator-foreground = #fff
+  bar-indicator-font = 2
+  bar-fill = ─
+  bar-fill-font = 2
+  bar-fill-foreground = #9f78e1
+  bar-empty = ─
+  bar-empty-font = 2
+  bar-empty-foreground = ${colors.foreground-alt}
+
+[module/backlight-acpi]
+inherit = module/xbacklight
+type = internal/backlight
+card = intel_backlight
+
 [module/pulseaudio-control]
 type = custom/script
 tail = true
-format-underline = ${colors.cyan}
+format-underline = ${xrdb:cyan}
 label-padding = 2
 label-foreground = ${colors.foreground}
 
@@ -117,7 +156,7 @@ type = internal/cpu
 interval = 2
 format-prefix = %{F#81A1C1}%{F-}
 format-prefix-foreground = ${colors.foreground-alt}
-; format-underline = ${xrdb:color6}
+format-underline = ${xrdb:color6}
 label = " %percentage:2%%"
 
 [module/memory]
@@ -125,24 +164,27 @@ type = internal/memory
 interval = 2
 format-prefix = %{F#A3BE8C}%{F-}
 format-prefix-foreground = ${colors.foreground-alt}
-; format-underline = ${xrdb:color2}
+format-underline = ${xrdb:color2}
 label = " %gb_used%"
 
-[module/eth]
+[module/wlan]
 type = internal/network
-interface = enp3s0
+interface = wlan0
 interval = 3.0
 
-; format-connected-underline = ${xrdb:color3}
-format-connected-prefix =
+format-connected-underline = ${xrdb:color3}
+format-connected-prefix =  
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
+label-connected = %essid%
+
+format-disconnected-prefix = 
+format-disconnected-prefix-foreground = ${xrdb:red}
 
 [module/storage]
 type = custom/script
 interval = 5
 format-prefix = %{F#B48EAD}%{F-}
-; format-underline = ${xrdb:color4}
+format-underline = ${xrdb:color4}
 exec = ~/.config/polybar/scripts/storage.sh
 label = " %output%"
 
@@ -154,14 +196,14 @@ warn-temperature = 60
 
 format = <label>
 format-prefix = %{F#D08770}%{F-}
-; format-underline = ${xrdb:color1}
+format-underline = ${xrdb:color1}
 label = " %temperature-c%"
 
 [module/openvpn]
 type = custom/script
 interval = 5
 format-prefix = %{F#D08770}ﱾ%{F-}
-; format-underline = ${xrdb:color4}
+format-underline = ${xrdb:color4}
 exec = ~/.config/polybar/scripts/openvpn.sh
 label = " %output%"
 
@@ -176,25 +218,45 @@ time = %H:%M
 time-alt = %H:%M:%S
 
 format-prefix = %{F#8FBCBB}%{F-}
-; format-underline = ${xrdb:color9}
+;format-underline = ${xrdb:color9}
 label = " %date%"
 
 [module/battery]
 type = internal/battery
-; format-prefix = %{F#8FBCBB}%{F-}
+format-discharging = <ramp-capacity>   <label-discharging>
+format-charging =  <animation-charging>   <label-charging>
 full-at = 99
 battery = BAT0
 adapter = AC
 poll-interval = 5
-format-discharging-padding = 1
-format-charging-padding = 1
-format-full-padding = 1
+format-charging-underline = ${xrdb:green}
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-ramp-capacity-0-foreground = ${xrdb:color1}
-ramp-capacity-1-foreground = ${xrdb:color1}
+
+ramp-capacity-0-foreground = ${xrdb:red}
+ramp-capacity-1-foreground = ${xrdb:red}
+ramp-capacity-foreground = ${xrdb:orange}
+ramp-capacity-4-foreground = ${xrdb:green}
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = ${xrdb:green}
+
 [settings]
 screenchange-reload = true
+
+[module/arch]
+type = custom/text
+content = 
+;alt-icon = 
+content-padding = 2
+content-background = ${color.acolor}
+content-foreground = ${color.fg}
+click-left = rofi -show run
+click-middle = rofi -show ssh
+click-right = echo poweroff reboot exit | xargs -n 1 | rofi -dmenu | bash

@@ -5,6 +5,12 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+function command_not_found_handler(){
+    sl
+    echo "$0: command not found" >&2
+}
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -77,7 +83,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git sudo vscode zsh-autosuggestions zsh-syntax-highlighting aliases ansible archlinux chucknorris node npm nmap systemd yarn zsh-interactive-cd zsh-navigation-tools)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,8 +101,11 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-eval $(keychain --eval --quiet id_github)
-# Compilation flags
+eval $(keychain --eval --quiet id_ed25519)
+eval $(keychain --eval --quiet id_ed25519.ugent)
+eval $(keychain --eval --quiet id_ed25519.scania)
+
+#e Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -108,5 +117,23 @@ eval $(keychain --eval --quiet id_github)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias proxy="sshuttle -D --dns -r $USER@proxy.inuits.eu 10.0.0.0/8 192.168.180.0/24 192.168.44.0/24 -x 172.16.0.0/16"
+alias cz='setxkbmap cz_qwerty'
+alias us='setxkbmap us'
+alias bo='/opt/sshuttle/bin/sshuttle -D -l 0.0.0.0 -r inuits@gide.ugent.be:2200 -x gide.ugent.be 157.193.0.0/16'
+
+#eval $(ssh-agent)
+#ssh-add $(find $HOME/.ssh/id_* | egrep -Ev pub)
+
+alias zimbra-tunnel="echo 'Zimbra admin interface is now available at https://localhost:7071/zimbraAdmin/'; ssh -NL 7071:zimbra11.mgmtprod:7071 proxy_inuits"
+alias tf='terraform'
+#export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+alias gsur='git submodule update --init --recursive'
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+
+export QSYS_ROOTDIR="/home/douball/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"
