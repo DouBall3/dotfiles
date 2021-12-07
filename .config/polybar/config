@@ -102,7 +102,7 @@ ws-icon-7 = 8;
 
 [module/mpd]
 type = custom/script
-exec = playerctl --player=spotify metadata -f "{{ artist }} - {{ title }}"
+exec = pgrep spotify >/dev/null && playerctl --player=spotify metadata -f "{{ artist }} - {{ title }}"
 format-prefix =   
 ;format-underline = ${xrdb:green}
 click-left = playerctl --player=spotify previous
@@ -173,7 +173,7 @@ interface = wlan0
 interval = 3.0
 
 format-connected-underline = ${xrdb:color3}
-format-connected-prefix =  
+format-connected-prefix =    
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %essid%
 
@@ -225,6 +225,7 @@ label = " %date%"
 type = internal/battery
 format-discharging = <ramp-capacity>   <label-discharging>
 format-charging =  <animation-charging>   <label-charging>
+format-full =  <label-full>
 full-at = 99
 battery = BAT0
 adapter = AC
@@ -255,7 +256,7 @@ type = custom/text
 content = 
 ;alt-icon = 
 content-padding = 2
-content-background = ${color.acolor}
+content-background = ${xrdb:arch}
 content-foreground = ${color.fg}
 click-left = rofi -show run
 click-middle = rofi -show ssh
