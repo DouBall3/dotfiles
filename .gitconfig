@@ -6,7 +6,7 @@
     default = simple
 
 [github]
-    user = Vincevrp
+    user = xdohna45
 
 [diff]
     tool = vimdiff

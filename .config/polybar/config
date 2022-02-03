@@ -37,7 +37,7 @@ module-margin-right = 1
 
 modules-left = arch i3 mpd
 modules-center = xwindow
-modules-right = pulseaudio-control cpu temperature memory storage wlan battery backlight-acpi date
+modules-right = pulseaudio-control cpu temperature memory storage openvpn wlan battery backlight-acpi date
 
 tray-position = right
 tray-detached = false
@@ -102,7 +102,7 @@ ws-icon-7 = 8;
 
 [module/mpd]
 type = custom/script
-exec = pgrep spotify >/dev/null && playerctl --player=spotify metadata -f "{{ artist }} - {{ title }}"
+exec = pgrep spotify >/dev/null && if [ $(playerctl --player=spotify status) = "Playing" ];then echo -n '%{u#1db954}%{+u}';fi;  pgrep spotify >/dev/null && playerctl --player=spotify metadata -f "{{ artist }} - {{ title }}"; echo -n '%{u-}'
 format-prefix =   
 ;format-underline = ${xrdb:green}
 click-left = playerctl --player=spotify previous

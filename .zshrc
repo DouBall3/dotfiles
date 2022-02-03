@@ -6,8 +6,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 function command_not_found_handler(){
-    sl
-    echo "$0: command not found" >&2
+    sl | lolcat
+    #echo "$0: command not found" >&2
+    cowsay -f tux "Yo, bro. I ain't knowing any $0"
 }
 
 
@@ -21,8 +22,7 @@ export ZSH="/home/douball/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
+[ "$TERM" != "linux" ] && ZSH_THEME="powerlevel10k/powerlevel10k"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
