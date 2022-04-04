@@ -1,46 +1,15 @@
-#!/bin/sh
-
-BLANK='#00000000'
-CLEAR='#ffffff55'
-DEFAULT='#ff00ffcc'
-TEXT='#ee00eeee'
-WRONG='#880000bb'
-VERIFYING='#bb00bbbb'
-
-i3lock \
-    --radius=300                 \
-                                 \
-    --insidever-color=$CLEAR      \
-    --insidewrong-color=$CLEAR    \
-    --inside-color=$CLEAR         \
-                                 \
-    --ring-color=5e81acff         \
-    --ringver-color=a3be8cff      \
-    --ringwrong-color=bf616aff    \
-                                 \
-    --clock                      \
-    --time-color=eceff4ff         \
-    --time-str="%H:%M:%S"            \
-    --time-font=Hack             \
-    --time-size=96               \
-                                 \
-    --date-color=d8dee9ff         \
-    --date-str="%d.%m.%Y"        \
-    --date-font=Hack             \
-    --date-size=30                \
-    --date-pos="tx:650"           \
-                                 \
-    --verif-text="Verifying..."   \
-    --verif-font=Hack            \
-    --verif-color=d8dee9ff        \
-    --verif-size=45               \
-                                 \
-    --wrong-text="Incorrect"      \
-    --wrong-font=Hack            \
-    --wrong-color=d8dee9ff        \
-    --wrong-size=45               \
-    --noinput-text="No input"     \
-                                 \
-    --blur 10                    \
-    --indicator                  \
-    --time-str="%H:%M:%S"        \
+swaylock \
+        --screenshots \
+            --clock \
+                --indicator \
+                    --indicator-radius 100 \
+                        --indicator-thickness 7 \
+                            --effect-blur 7x5 \
+                                --effect-vignette 0.5:0.5 \
+                                    --ring-color bb00cc \
+                                        --key-hl-color 880033 \
+                                            --line-color 00000000 \
+                                                --inside-color 00000088 \
+                                                    --separator-color 00000000 \
+                                                        --grace 2 \
+                                                            --fade-in 0.2
