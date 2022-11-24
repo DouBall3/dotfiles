@@ -1,0 +1,15 @@
+[Info  - 10:49:05 AM] (58858) Pylance language server 2022.11.20 (pyright 470188d0) starting
+[Info  - 10:49:05 AM] (58858) Server root directory: /home/douball/.vscode/extensions/ms-python.vscode-pylance-2022.11.20/dist
+[Info  - 10:49:05 AM] (58858) Starting service instance "AutoDiscovery"
+[Info  - 10:49:05 AM] (58858) Notebook support: LSP
+[Info  - 10:49:05 AM] (58858) Interactive window support: LSP
+[Info  - 10:49:05 AM] (58858) No configuration file found.
+[Info  - 10:49:05 AM] (58858) No pyproject.toml file found.
+[Info  - 10:49:05 AM] (58858) Setting pythonPath for service "AutoDiscovery": "/bin/python"
+[Warn  - 10:49:05 AM] (58858) stubPath /home/douball/giznam/agrafa-monitoring/AutoDiscovery/typings is not a valid directory.
+[Info  - 10:49:05 AM] (58858) Assuming Python version 3.10
+[Info  - 10:49:05 AM] (58858) Assuming Python platform Linux
+[Info  - 10:49:05 AM] (58858) Searching for source files
+[Info  - 10:49:05 AM] (58858) Found 5 source files
+[Info  - 10:49:06 AM] (58858) Background analysis(1) root directory: /home/douball/.vscode/extensions/ms-python.vscode-pylance-2022.11.20/dist
+[Info  - 10:49:06 AM] (58858) Background analysis(1) started

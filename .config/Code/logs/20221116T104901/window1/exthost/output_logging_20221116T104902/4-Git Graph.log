@@ -1,0 +1,9 @@
+[2022-11-16 10:49:03.316] Starting Git Graph ...
+[2022-11-16 10:49:03.420] Using git (version: 2.38.1)
+[2022-11-16 10:49:03.429] Started Git Graph - Ready to use!
+[2022-11-16 10:49:03.429] Searching workspace for new repos ...
+[2022-11-16 10:49:03.437] > git rev-parse --show-toplevel
+[2022-11-16 10:49:03.460] Added new repo: /home/douball/giznam/agrafa-monitoring
+[2022-11-16 10:49:03.462] Completed searching workspace for new repos
+[2022-11-16 10:49:03.462] Showing "Git Graph" Status Bar Item
+[2022-11-16 10:49:03.669] Successfully set Visual Studio Code Context "git-graph:codiconsSupported" to "true"

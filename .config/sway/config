@@ -3,8 +3,8 @@
 
 # Variables and commands {{{
 
-set $wob        /run/user/1000/wob.sock
-
+set $WOBSOCK $XDG_RUNTIME_DIR/wob.sock
+exec_always rm -f $WOBSOCK && mkfifo $WOBSOCK && tail -f $WOBSOCK | wob
 # Set super key as mod
 set $mod        Mod4
 
@@ -33,11 +33,21 @@ exec            redshift -l 49.196993:16.602921              # Start Redshift
 exec            imwheel -k -b 4567                        # Start imwheel
 exec            $HOME/.bin/scratchpad                   # Start scratchpad terminal
 exec            dunst                                   # Start dunst
-exec            xautolock -time 5 -locker '~/.bin/lock' &
-exec_always     pgrep waybar || waybar
+exec swayidle -w \
+	timeout 65 '~/.bin/lock' \
+	timeout 60 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"'
+
+for_window [app_id="^.*"] inhibit_idle fullscreen
+for_window [class="^.*"] inhibit_idle fullscreen
+exec_always     pgrep waybar || waybar && pkill waybar && waybar
+exec_always xrandr --output XWAYLAND0 --primary --verbose
+
 output "*" background $wallpaper fill
-exec            flameshot
 exec            nm-applet --indicator
+exec            blueman-applet
+
+exec            /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 workspace 7
 exec            mattermost-desktop
@@ -48,7 +58,7 @@ exec            spotify
 workspace 2
 exec            google-chrome-stable
 
-workspace 2
+workspace 5
 exec            st
 
 # }}}
@@ -78,7 +88,11 @@ client.unfocused            $inactive-bg-color      $inactive-bg-color      $ina
 client.focused_inactive     $inactive-bg-color      $inactive-bg-color      $inactive-text-color    $text-color
 client.urgent               $urgent-bg-color        $urgent-bg-color        $text-color             $text-color
 
-# Window style
+ output 'Samsung Electric Company LU28R55 H4ZRA00781' pos 0 0
+output 'Dell Inc. DELL S2421H 53XQXG3' pos 0 0
+output eDP-1 pos 1920 0
+
+#Window style
 for_window [class="^.*"] border pixel 1
 smart_borders on
 
@@ -128,7 +142,7 @@ bindsym $mod+Shift+r        restart
 bindsym $mod+Shift+p        exec $HOME/.bin/powermenu
 
 # Exit i3 (logs you out of your X session)
-bindsym $mod+Shift+q        exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+q        exec "swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'"
 # }}}
 
 # Movement {{{
@@ -166,11 +180,12 @@ bindsym $mod+Shift+Right    move right
 # Lockscreen
 bindsym $mod+Shift+Return   exec $lock
 
-# Screenshot
-bindsym Print               exec $screenshot
+#Screenshot
+bindsym Print               exec grim -g "$(slurp)" - | wl-copy
+bindsym $mod+u              exec grim -g "$(swaymsg -t get_tree | jq -j '.. | select(.type?) | select(.focused).rect | "\(.x),\(.y) \(.width)x\(.height)"')" - | wl-copy
+bindsym $mod+p    exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
 
 # Show scratchpad
-bindsym $mod+u              [instance="scratchpad"] scratchpad show
 # }}}
 
 # Workspaces {{{
@@ -253,19 +268,33 @@ mode "resize" {
 }
 
 # }}}
-bindsym XF86AudioRaiseVolume exec pamixer -ui 2 && pamixer --get-volume > $wob
-bindsym XF86AudioLowerVolume exec pamixer -ud 2 && pamixer --get-volume > $wob
-bindsym XF86AudioMute exec pamixer --toggle-mute && ( pamixer --get-mute && echo 0 > $wob ) || pamixer --get-volume > $wob
+bindsym XF86AudioRaiseVolume exec pamixer -ui 2 && pamixer --get-volume > $WOBSOCK
+bindsym XF86AudioLowerVolume exec pamixer -ud 2 && pamixer --get-volume > $WOBSOCK
+bindsym XF86AudioMute exec pamixer --toggle-mute && ( $(pamixer --get-mute) && echo 0 > $WOBSOCK || pamixer --get-volume > $WOBSOCK)
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 bindsym XF86MonBrightnessDown exec brightnessctl set -5%
-bindsym $mod+Shift+i exec brightnessctl set +5% | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $wob
+bindsym $mod+Shift+i exec brightnessctl set +5% | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
 
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
-bindsym $mod+i exec brightnessctl set 5%- | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $wob
+bindsym $mod+i exec brightnessctl set 5%- | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
 
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86Search exec $menu
+
+bindsym Ctrl+Shift+Left exec playerctl previous
+bindsym Ctrl+Shift+Right exec playerctl next
+bindsym Ctrl+Shift+Up exec playerctl play-pause
+# }}}
+
+# Keyboard settings {{{
+
+input "type:keyboard" {
+    xkb_layout "us,cz(qwerty)"
+    xkb_variant ""
+    xkb_options grp:alt_shift_toggle
+}
+
 # }}}

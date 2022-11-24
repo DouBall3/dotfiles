@@ -1,0 +1,38 @@
+[ 10:49:12 | command ] git rev-parse --git-dir
+[ 10:49:12 | command ] git rev-parse --git-dir
+[ 10:49:12 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AutoDiscovery/main.py
+[ 10:49:12 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AutoDiscovery/main.py"
+[ 10:49:17 | command ] git rev-parse --git-dir
+[ 10:49:17 | command ] git rev-parse --git-dir
+[ 10:49:18 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AutoDiscovery/configuration/config.yml
+[ 10:49:18 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AutoDiscovery/configuration/config.yml"
+[ 10:49:41 | command ] git rev-parse --git-dir
+[ 10:49:41 | command ] git rev-parse --git-dir
+[ 10:49:41 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AutoDiscovery/lib/mapy_dc.py
+[ 10:49:41 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AutoDiscovery/lib/mapy_dc.py"
+[ 10:49:50 | command ] git rev-parse --git-dir
+[ 10:49:50 | command ] git rev-parse --git-dir
+[ 10:49:50 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AutoDiscovery/lib/tools.py
+[ 10:49:50 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AutoDiscovery/lib/tools.py"
+[ 10:49:51 | command ] git rev-parse --git-dir
+[ 10:49:51 | command ] git rev-parse --git-dir
+[ 10:49:51 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AutoDiscovery/lib/logger.py
+[ 10:49:51 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AutoDiscovery/lib/logger.py"
+[ 10:50:27 | command ] git rev-parse --git-dir
+[ 10:50:27 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AutoDiscovery/lib/mapy_dc.py
+[ 10:50:27 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AutoDiscovery/lib/mapy_dc.py"
+[ 10:51:12 | command ] git rev-parse --git-dir
+[ 10:51:12 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AutoDiscovery/lib/mapy_dc.py
+[ 10:51:12 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AutoDiscovery/lib/mapy_dc.py"
+[ 10:51:25 | command ] git rev-parse --git-dir
+[ 10:51:25 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AutoDiscovery/main.py
+[ 10:51:25 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AutoDiscovery/main.py"
+[ 10:51:53 | command ] git rev-parse --git-dir
+[ 10:51:53 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AutoDiscovery/configuration/config.yml
+[ 10:51:53 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AutoDiscovery/configuration/config.yml"
+[ 10:52:15 | command ] git rev-parse --git-dir
+[ 10:52:15 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AutoDiscovery/main.py
+[ 10:52:15 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AutoDiscovery/main.py"
+[ 11:04:14 | command ] git rev-parse --git-dir
+[ 11:04:14 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AutoDiscovery/configuration/config.yml
+[ 11:04:14 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AutoDiscovery/configuration/config.yml"

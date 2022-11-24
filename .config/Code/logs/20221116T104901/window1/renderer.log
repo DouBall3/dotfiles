@@ -1,0 +1,8 @@
+2022-11-16 10:49:02.086 [critical] Extension 'ms-toolsai.jupyter' wants API proposal 'notebookDebugOptions' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2022-11-16 10:49:02.126 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2022-11-16 10:49:03.451 [error] [Extension Host] (node:58650) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `code --trace-deprecation ...` to show where the warning was created)
+2022-11-16 10:49:04.630 [info] [perf] Render performance baseline is 60ms
+2022-11-16 10:49:18.909 [error] [Extension Host] error: You must be logged in to the server (Unauthorized)
+2022-11-16 10:49:18.921 [error] [Extension Host] error: couldn't get available api versions from server: Unauthorized
+2022-11-16 10:49:19.125 [error] [Extension Host] error: You must be logged in to the server (Unauthorized)

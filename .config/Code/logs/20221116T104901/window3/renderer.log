@@ -1,0 +1,20 @@
+2022-11-16 13:39:38.734 [critical] Extension 'ms-toolsai.jupyter' wants API proposal 'notebookDebugOptions' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2022-11-16 13:39:38.792 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2022-11-16 13:39:39.789 [error] [Extension Host] (node:122450) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `code --trace-deprecation ...` to show where the warning was created)
+2022-11-16 13:39:40.999 [info] [perf] Render performance baseline is 37ms
+2022-11-16 13:41:00.673 [error] [Extension Host] error: couldn't get available api versions from server: Unauthorized
+2022-11-16 13:41:00.770 [error] [Extension Host] error: You must be logged in to the server (Unauthorized)
+2022-11-16 13:41:00.876 [error] [Extension Host] error: You must be logged in to the server (Unauthorized)
+2022-11-16 14:08:40.958 [error] spawn st-256color ENOENT: Error: spawn st-256color ENOENT
+    at ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2022-11-16 14:10:56.839 [error] spawn st-256color ENOENT: Error: spawn st-256color ENOENT
+    at ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2022-11-16 14:12:25.353 [error] spawn st-256color ENOENT: Error: spawn st-256color ENOENT
+    at ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)

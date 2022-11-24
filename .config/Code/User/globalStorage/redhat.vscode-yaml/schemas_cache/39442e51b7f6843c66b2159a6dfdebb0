@@ -1,0 +1,21 @@
+{
+  "$id": "https://raw.githubusercontent.com/ansible/schemas/main/f/ansible-vars.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "anyOf": [
+    {
+      "type": "object"
+    },
+    {
+      "pattern": "^\\$ANSIBLE_VAULT;",
+      "type": "string"
+    }
+  ],
+  "examples": [
+    "playbooks/vars/*.yml",
+    "vars/*.yml",
+    "defaults/*.yml",
+    "host_vars/*.yml",
+    "group_vars/*.yml"
+  ],
+  "title": "Ansible Vars Schema"
+}

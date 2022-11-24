@@ -113,3 +113,29 @@ alias us='setxkbmap us'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+export QSYS_ROOTDIR="/home/douball/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="/usr/bin/vendor_perl/:/usr/bin/core_perl/:/home/douball/.local/bin:$PATH"
+
+
+alias debian="sudo chroot /home/douball/debian /fakedeb.sh"
+alias ubuntu="sudo chroot /home/douball/ubuntu /fakedeb.sh"
+
+set -o vi
+
+export EDITOR="vim"
+export PATH="${PATH}:/home/douball/.local/share/gem/ruby/3.0.0/bin"
+
+
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > "$XDG_RUNTIME_DIR/ssh-agent.env"
+fi
+if [[ ! "$SSH_AUTH_SOCK" ]]; then
+    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+fi
+

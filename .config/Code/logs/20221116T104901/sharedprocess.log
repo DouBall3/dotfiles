@@ -1,0 +1,15 @@
+2022-11-16 10:49:02.992 [info] Starting worker process with pid 58687 (type: fileWatcher, window: 1).
+2022-11-16 10:49:08.043 [info] Getting Manifest... hashicorp.terraform
+2022-11-16 10:49:08.044 [info] Getting Manifest... ms-toolsai.jupyter
+2022-11-16 10:49:08.267 [info] Installing extension: ms-toolsai.jupyter
+2022-11-16 10:49:08.321 [info] Installing extension: hashicorp.terraform
+2022-11-16 10:49:10.757 [info] Extracted extension to /home/douball/.vscode/extensions/.4e4b4f77-db5a-42a4-9fc2-4c5086143c28: ms-toolsai.jupyter
+2022-11-16 10:49:10.772 [info] Renamed to /home/douball/.vscode/extensions/ms-toolsai.jupyter-2022.9.1303220346
+2022-11-16 10:49:10.787 [info] Extracting completed. ms-toolsai.jupyter
+2022-11-16 10:49:10.797 [info] Extension installed successfully: ms-toolsai.jupyter
+2022-11-16 10:49:10.868 [info] Extracted extension to /home/douball/.vscode/extensions/.4d9b5f3f-3620-4f5f-a44b-0fe82dbdc2ef: hashicorp.terraform
+2022-11-16 10:49:10.880 [info] Renamed to /home/douball/.vscode/extensions/hashicorp.terraform-2.25.0-linux-x64
+2022-11-16 10:49:10.881 [info] Extracting completed. hashicorp.terraform
+2022-11-16 10:49:10.887 [info] Extension installed successfully: hashicorp.terraform
+2022-11-16 13:39:38.362 [info] Starting worker process with pid 122451 (type: fileWatcher, window: 3).
+2022-11-16 13:39:39.139 [info] Worker process with pid 58687 terminated normally (type: fileWatcher, window: 1).

@@ -1,0 +1,132 @@
+[ 13:40:59 | command ] git rev-parse --git-dir
+[ 13:40:59 | command ] git rev-parse --git-dir
+[ 13:40:59 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/node.yml
+[ 13:40:59 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/node.yml"
+[ 13:41:03 | command ] git rev-parse --git-dir
+[ 13:41:03 | command ] git rev-parse --git-dir
+[ 13:41:03 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/agrafa.yml
+[ 13:41:03 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/agrafa.yml"
+[ 13:41:45 | command ] git rev-parse --git-dir
+[ 13:41:45 | command ] git rev-parse --git-dir
+[ 13:41:46 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:41:46 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:44:09 | command ] git rev-parse --git-dir
+[ 13:44:09 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:44:09 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:45:07 | command ] git rev-parse --git-dir
+[ 13:45:07 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:45:07 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:46:55 | command ] git rev-parse --git-dir
+[ 13:46:55 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:46:55 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:47:54 | command ] git rev-parse --git-dir
+[ 13:47:54 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:47:54 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:48:48 | command ] git rev-parse --git-dir
+[ 13:48:48 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:48:48 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:48:54 | command ] git rev-parse --git-dir
+[ 13:48:54 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:48:54 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:49:15 | command ] git rev-parse --git-dir
+[ 13:49:15 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:49:15 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:54:30 | command ] git rev-parse --git-dir
+[ 13:54:30 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:54:30 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:55:49 | command ] git rev-parse --git-dir
+[ 13:55:49 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:55:49 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:55:54 | command ] git rev-parse --git-dir
+[ 13:55:54 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:55:54 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:56:45 | command ] git rev-parse --git-dir
+[ 13:56:45 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:56:45 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:58:07 | command ] git rev-parse --git-dir
+[ 13:58:07 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:58:07 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:58:52 | command ] git rev-parse --git-dir
+[ 13:58:52 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:58:52 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:59:37 | command ] git rev-parse --git-dir
+[ 13:59:37 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:59:37 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 13:59:40 | command ] git rev-parse --git-dir
+[ 13:59:40 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 13:59:40 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:02:25 | command ] git rev-parse --git-dir
+[ 14:02:25 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:02:25 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:02:58 | command ] git rev-parse --git-dir
+[ 14:02:58 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:02:58 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:03:17 | command ] git rev-parse --git-dir
+[ 14:03:17 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:03:17 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:03:29 | command ] git rev-parse --git-dir
+[ 14:03:29 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:03:29 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:05:09 | command ] git rev-parse --git-dir
+[ 14:05:09 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:05:09 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:06:41 | command ] git rev-parse --git-dir
+[ 14:06:41 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:06:41 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:07:13 | command ] git rev-parse --git-dir
+[ 14:07:13 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:07:13 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:07:50 | command ] git rev-parse --git-dir
+[ 14:07:50 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:07:50 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:08:26 | command ] git rev-parse --git-dir
+[ 14:08:26 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:08:26 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:08:49 | command ] git rev-parse --git-dir
+[ 14:08:49 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:08:49 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:10:03 | command ] git rev-parse --git-dir
+[ 14:10:03 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:10:03 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:10:27 | command ] git rev-parse --git-dir
+[ 14:10:27 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:10:27 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:11:06 | command ] git rev-parse --git-dir
+[ 14:11:06 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:11:06 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:11:33 | command ] git rev-parse --git-dir
+[ 14:11:33 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:11:33 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:11:59 | command ] git rev-parse --git-dir
+[ 14:11:59 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:11:59 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:12:30 | command ] git rev-parse --git-dir
+[ 14:12:30 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:12:30 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:14:09 | command ] git rev-parse --git-dir
+[ 14:14:09 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:14:09 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:14:52 | command ] git rev-parse --git-dir
+[ 14:14:52 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:14:52 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:15:40 | command ] git rev-parse --git-dir
+[ 14:15:40 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:15:40 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:20:16 | command ] git rev-parse --git-dir
+[ 14:20:16 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:20:16 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:23:30 | command ] git rev-parse --git-dir
+[ 14:23:30 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:23:30 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:26:16 | command ] git rev-parse --git-dir
+[ 14:26:16 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:26:16 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:27:25 | command ] git rev-parse --git-dir
+[ 14:27:25 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:27:25 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:27:36 | command ] git rev-parse --git-dir
+[ 14:27:36 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:27:36 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"
+[ 14:30:58 | command ] git rev-parse --git-dir
+[ 14:30:58 | command ] git blame -C --incremental -- /home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml
+[ 14:30:58 | info ] Blamed "/home/douball/giznam/agrafa-monitoring/AlertRules/rules/prometheus.yml"

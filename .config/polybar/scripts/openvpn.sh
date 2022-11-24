@@ -1,2 +1,2 @@
 #!/bin/bash
-(pgrep -a openvpn$ || echo down) | awk -F '[. ]' '{print $(NF-1);exit}'
+pgrep -a openvpn$ || echo down && echo up

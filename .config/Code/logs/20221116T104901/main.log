@@ -1,0 +1,8 @@
+2022-11-16 10:49:01.259 [info] update#setState idle
+2022-11-16 10:49:02.040 [info] Starting extension host with pid 58650 (fork() took 8 ms).
+2022-11-16 10:49:31.262 [info] update#setState checking for updates
+2022-11-16 10:49:31.270 [info] update#setState available for download
+2022-11-16 13:39:38.357 [info] Starting extension host with pid 122450 (fork() took 10 ms).
+2022-11-16 13:39:39.106 [info] Extension host with pid 58650 exited with code: 0, signal: null.
+2022-11-16 16:28:59.051 [info] Waiting for extension host with pid 122450 to exit.
+2022-11-16 16:28:59.398 [info] Extension host with pid 122450 exited with code: 0, signal: null.

@@ -7,23 +7,23 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["custom/spotify", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"],
-    // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
+    "modules-right": ["custom/spotify", "idle_inhibitor", "pulseaudio", "custom/vpn", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"],
+     // Modules configuration
+     "sway/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": false,
+         "format": "{icon}",
+         "format-icons": {
+             "1": "",
+             "2": "",
+             "3": "",
+             "6": "",
+             "7": ""
     //         "urgent": "",
     //         "focused": "",
     //         "default": ""
-    //     }
-    // },
+            }
+     },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -40,9 +40,9 @@
         "exec": "/usr/bin/python3 ~/.bin/mediaplayer.py --player spotify",
         "format": "{}  ",
         "return-type": "json",
-        "on-click": "playerctl play-pause",
-        "on-scroll-up": "playerctl next",
-        "on-scroll-down": "playerctl previous"
+        "on-click": "playerctl --player=spotify play-pause",
+        "on-scroll-up": "playerctl --player=spotify next",
+        "on-scroll-down": "playerctl --player=spotify previous"
     },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
@@ -162,6 +162,13 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/vpn": {
+        "format": "{} {icon}",
+        "exec": "$HOME/.bin/openvpn.sh",
+        "return-type": "plain",
+        "interval": 5,
+        "format-icons": ["嬨",""]
     }
 }
 

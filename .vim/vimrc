@@ -3,7 +3,7 @@
 
 " Initial setup {{{
 syntax on
-set viminfo+=n~/.vim/viminfo
+" set viminfo+=n~/.vim/viminfo
 " }}}
 
 " Plugins {{{
@@ -28,7 +28,6 @@ Plug 'w0rp/ale'
 Plug 'ajh17/VimCompletesMe'
 Plug 'mattn/emmet-vim'
 Plug 'junegunn/goyo.vim'
-Plug 'takac/vim-hardtime'
 
 " Languages and syntax
 Plug 'PotatoesMaster/i3-vim-syntax'
@@ -125,7 +124,8 @@ command! W execute ":w !sudo tee %"
 " Convert to unix line ending
 function! DOS2Unix() abort
     edit ++ff=unix
-    %s///g
+    %s/
+//g
 endfun
 
 function! SetIndent(num) abort

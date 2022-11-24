@@ -252,3 +252,16 @@ label:focus {
 #keyboard-state > label.locked {
     background: rgba(0, 0, 0, 0.2);
 }
+
+.custom-spotify {
+      padding: 0 10px;
+      margin: 0;
+      background-color: #1DB954;
+      color: black;
+}
+
+#custom-vpn {
+    padding: 0 10px;
+    margin: 0;
+    background-color: #ED7F22;
+  }

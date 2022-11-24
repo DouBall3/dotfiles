@@ -1,6 +1,7 @@
 [user]
-	name = Ondrej Dohnal
-	email = douball@inuits.eu
+	name = Ondrej
+	email = ondrej.dohnal@firma.seznam.cz
+	signingkey = 48370A39
 
 [push]
     default = simple
@@ -18,3 +19,5 @@
     ui = true
 [core]
 	editor = vim
+[commit]
+	gpgsign = true

@@ -1,0 +1,15 @@
+Telemetry is disabled
+Experiments are disabled, only manually opted experiments are active.
+LSP Notebooks experiment is enabled
+LSP Notebooks interactive window support is enabled
+Python interpreter path: /bin/python
+Starting Pylance language server.
+> conda info --json
+> /bin/python ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/interpreterInfo.py
+> /bin/python2 ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/interpreterInfo.py
+> /sbin/python ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/interpreterInfo.py
+> /sbin/python2 ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/interpreterInfo.py
+> /usr/bin/python ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/interpreterInfo.py
+> /usr/bin/python2 ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/interpreterInfo.py
+> /usr/sbin/python ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/interpreterInfo.py
+> /usr/sbin/python2 ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.18.2/pythonFiles/interpreterInfo.py

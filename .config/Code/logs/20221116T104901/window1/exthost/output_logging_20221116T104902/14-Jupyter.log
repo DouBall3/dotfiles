@@ -1,0 +1,17 @@
+Visual Studio Code (1.73.0, undefined, desktop)
+Jupyter Extension Version: 2022.9.1202862440.
+Python Extension Version: 2022.18.2.
+Workspace folder /home/douball/giznam/agrafa-monitoring/AutoDiscovery
+info 10:49:13.383: ZMQ install verified.
+info 10:49:13.898: LSP Notebooks experiment is disabled -- not in treatment group
+info 10:49:14.287: Got empty env vars with python /bin/python in 339ms
+info 10:49:14.288: Got env vars ourselves faster /bin/python with env var count 70 in 340ms
+info 10:49:14.304: Process Execution: > /bin/python -m pip list
+> /bin/python -m pip list
+info 13:39:39.024: Shutting down notebooks for 668fc184-0ab6-47fc-a80c-05e52a603c0c
+info 13:39:39.025: Disposing HostJupyterExecution b474aede-856e-46a7-bff2-72b816c6ee19
+info 13:39:39.025: Disposing super HostJupyterExecution b474aede-856e-46a7-bff2-72b816c6ee19
+info 13:39:39.025: Disposing HostJupyterExecution b474aede-856e-46a7-bff2-72b816c6ee19
+info 13:39:39.025: Finished disposing HostJupyterExecution  b474aede-856e-46a7-bff2-72b816c6ee19
+info 13:39:39.052: Cleaning up server cache b474aede-856e-46a7-bff2-72b816c6ee19
+info 13:39:39.057: Finished disposing HostJupyterExecution  b474aede-856e-46a7-bff2-72b816c6ee19

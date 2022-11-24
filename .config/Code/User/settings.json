@@ -1,7 +1,6 @@
 {
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "workbench.colorTheme": "Nord",
     "editor.lineNumbers": "relative",
     "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
@@ -10,5 +9,12 @@
     "editor.fontSize": 13,
     "workbench.startupEditor": "newUntitledFile",
     "window.customMenuBarAltFocus": false,
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path.linux": "/home/douball/.vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vscode-kubernetes.minikube-path.linux": "/home/douball/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+        "vscode-kubernetes.kubectl-path.linux": "/home/douball/.vs-kubernetes/tools/kubectl/kubectl"
+    },
+    "kite.showWelcomeNotificationOnStartup": false,
+    "terminal.integrated.fontFamily": "MesloLGS NF"
 }
